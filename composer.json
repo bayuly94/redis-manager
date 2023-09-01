@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=7.0.0",
-        "open-admin-org/open-admin": "~1.0.20",
+        "open-admin-org/open-admin": "*",
         "predis/predis": "~1.0"
     },
     "require-dev": {
@@ -32,5 +32,20 @@
             ]
 
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": [
+                {
+                    "name": "open-admin-org/open-admin",
+                    "version": "1.0",
+                    "dist": {
+                        "url": "https://github.com/bayuly94/open-admin/archive/refs/tags/main.zip",
+                        "type": "zip"
+                    }
+                }
+            ]
+        }
+    ]
 }
